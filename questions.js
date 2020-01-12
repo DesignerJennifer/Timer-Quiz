@@ -14,6 +14,11 @@ var questions = [
       title: "Question",
       choices: ["answer1", "answer2", "answer3", "answer4"],
       answer: "answer3"
+    },
+    {
+      title: "Question",
+      choices: ["answer1", "answer2", "answer3", "answer4"],
+      answer: "answer3"
     }
-  ];
+  ]
   

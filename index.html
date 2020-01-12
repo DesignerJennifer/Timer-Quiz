@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">    
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <title>Coding Quiz</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Coding Quiz</title>
 
 </head>
 
-  <body>
 
-    <!--Button "View high scores"-->
-    <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <link href="" id="highScores">
-            High Scores          
+<body>
+
+
+
+
+  <!--Button "View high scores"-->
+
+
+  <!-- //instrucitons on the quiz. -->
+  <div class="container">
+
+    <div  id="instructions">
+      <h3 class="h3">Coding Quiz Challenge</h3>
+    
+      <p>Try to answer the following code-related questions within the time
+        limit. Keep in mind that incorrect answers will penalize your
+        score/time by ten seconds!
+      </p>
+      <button id="startButton">START QUIZ</button>
+    
+    </div>
+    <div id="game">
+
+      <div class="row">
+        <div class="col-6">
+          <link href="" id="highScores">
+          High Scores
+        </div>
+
+        <!--Timer display-->
+        <div class="col-6">
+          <p>Timer: <span id="timer">0</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col align-self-center">
+
+         
+
+          <!--Start Button-->
+          <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
           </div>
+          <!--Feedback text box (right or wrong)-->
+          <div id="feedBack">
 
-          <!--Timer display-->
-          <div class="col-6">
-            <p>Timer: <span id="timer">0</span></p>
           </div>
         </div>
       </div>
- 
-    <!-- //instrucitons on the quiz. -->
-    <div class="container">
-      <div class="row">
-        <div class="col align-self-center">
-          
-          <h3 class="h3">Coding Quiz Challenge</h3>
-
-          <p>Try to answer the following code-related questions within the time
-            limit. Keep in mind that incorrect answers will penalize your
-            score/time by ten seconds!
-          </p>
-
-        <!--Start Button-->
-        <button id="startButton">START QUIZ</button>
-        
-        </div>
     </div>
-    
-<!--Questions-->
-  <div id="questions" class="hide">
-    <div class="questionText">
-  
+    <!--Questions-->
+
+
+
+    <div id="scoreBoard">
+      <div id="finalScore">Final Score: </div>
+      <div id="timeUp">Time's up!</div>
+
+      <!--Div to show high scores-->
+      <div>
+        <h1>High Scores</h1>
+        <p id="highscores">
+
+        </p>
+
+      </div>
+
     </div>
 
-    <!--Div to hold buttons for answers-->
-    <div class="hide">
-      <button class="ansButtons"></button>
-
-
-    </div>
-    
-    <!--Feedback text box (right or wrong)-->
-    <div id="feedBack">
-
-    </div>
-    
-    <!--Div to show high scores-->
-    <div>
-      <h1>High Scores</h1>
-      <p id="highscores">
-
-      </p>
-
-    </div>
-  
-
-    
 
 
 
 
-<script src="script.js" type="text/JavaScript"></script>
+
+
+
+  </div>
+
+  <script src="questions.js" type="text/JavaScript"></script>
+
+
+  <script src="script.js" type="text/JavaScript"></script>
 
 </body>
+
 </html>
