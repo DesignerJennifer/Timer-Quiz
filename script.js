@@ -1,26 +1,25 @@
-// variables to keep track of quiz state
-var currentQuestionIndex = 0;
-var time= 75;
-
-
-
-//Timer
-function startQuiz() {
-    // hide start screen
-    var startScreenEl = document.getElementById("start-screen");
-    startScreenEl.setAttribute("class", "hide");
-  
-    // un-hide questions section
-    questionsEl.removeAttribute("class");
-  
-    // start timer
-    timerId = setInterval(countdown, 75000);
-  
-    // show starting time
-    timerEl.textContent = time;
-  
-    getQuestion();
+// Timer
+var timer = function() {
+    var sec = 75;
+    setInterval(function() {
+      document.getElementById("timer").innerHTML = sec;
+      sec--;
+      if (sec == 00) {
+      }
+    }, 1000);
   }
 
-  
+  document.getElementById("startButton").addEventListener("click", timer);
 
+
+
+
+
+
+
+
+
+
+
+
+// 3 if they're out of time, display score

@@ -4,100 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="stylesheet.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">    
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <title>Coding Quiz</title>
+
 </head>
 
-<body>
+  <body>
 
-<!-- //instrucitons on the quiz. -->
-    <h1 class="h1">Coding Quiz</h1>
-    <p class="p">As a coding bootcamp student
-        I want to take a timed quiz on JavaScript fundamentals that stores high scores
-        so that I can gauge my progress compared to my peers
-        </p>
+    <!--Button "View high scores"-->
+    <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <link href="" id="highScores">
+            High Scores          
+          </div>
 
-    <button id="startButton">Start Quiz</button>
+          <!--Timer display-->
+          <div class="col-6">
+            <p>Timer: <span id="timer">0</span></p>
+          </div>
+        </div>
+      </div>
+ 
+    <!-- //instrucitons on the quiz. -->
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-center">
+          
+          <h3 class="h3">Coding Quiz Challenge</h3>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+          <p>Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+          </p>
 
-
-<!--Quiz Questions below-->
-
-   <p id="questions" class="hide"> </p>
-    <div>
-        <p class="question" id="questionOne">Question 1.</p>
-        <br>
-        <ol>
-            <li>answer 1</li>
-            <li>answer 2</li>
-            <li>answer 3</li>
-            <li>answer 4</li>
-        </ol>
-        <br>
-        <p class="answer" id="answerOne"></p>
+        <!--Start Button-->
+        <button id="startButton">START QUIZ</button>
+        
+        </div>
+    </div>
+    
+<!--Questions-->
+  <div id="questions" class="hide">
+    <div class="questionText">
+  
     </div>
 
-    <div>
-        <p class="question" id="questionTwo">Question 2.</p>
-        <br>
-        <ol>
-            <li>answer 1</li>
-            <li>answer 2</li>
-            <li>answer 3</li>
-            <li>answer 4</li>
-        </ol>
-        <br>
-        <p class="answer" id="answer??"></p>
+    <!--Div to hold buttons for answers-->
+    <div class="hide">
+      <button class="ansButtons"></button>
+
 
     </div>
-
-    <div>
-        <p class="question" id="questionThree">Question 3.</p>
-        <br>
-        <ol>
-            <li>answer 1</li>
-            <li>answer 2</li>
-            <li>answer 3</li>
-            <li>answer 4</li>
-        </ol>
-        <br>
-        <p class="answer" id="answerOne"></p>
+    
+    <!--Feedback text box (right or wrong)-->
+    <div id="feedBack">
 
     </div>
-
+    
+    <!--Div to show high scores-->
     <div>
-        <p class="question" id="questionFour">Question 4.</p>
-        <br>
-        <ol>
-            <li>answer 1</li>
-            <li>answer 2</li>
-            <li>answer 3</li>
-            <li>answer 4</li>
-        </ol>
-        <br>
-        <p class="answer" id="answerOne"></p>
+      <h1>High Scores</h1>
+      <p id="highscores">
+
+      </p>
 
     </div>
+  
 
-    <div>
-        <p class="question" id="questionFive">Question 5.</p>
-        <br>
-        <ol>
-            <li>answer 1</li>
-            <li>answer 2</li>
-            <li>answer 3</li>
-            <li>answer 4</li>
-        </ol>
-        <br>
-        <p class="answer" id="answerOne"></p>
-
-    </div>
+    
 
 
 
-<script src="script.js"></script>
 
+<script src="script.js" type="text/JavaScript"></script>
 
 </body>
 </html>

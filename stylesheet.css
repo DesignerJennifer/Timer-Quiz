@@ -1,15 +1,38 @@
-.h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkgreen;
+.body {
+    background-image: url(halftone.png);
 }
 
+
+
+.h3 {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    text-align: center;
+}  
+
 .p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    text-align: center;
 }
 
 #startButton {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     color: white;
     background-color: red;
+    padding: 8px;
+    border: none;
+    border-radius: 1em;
+    align-items: center;
+}
+
+#timer {
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+    
+}
+
+#highScores {
+    font-family: 'Roboto', sans-serif;
 }
