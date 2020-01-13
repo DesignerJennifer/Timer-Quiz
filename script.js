@@ -33,12 +33,10 @@ function gameStart() {
 
         document.getElementById("choices").innerHTML="";
         for (let i = 0; i < questions[index].choices.length; i++) {
-
             document.getElementById("choices").append(questions[index].choices[i])
             var br=document.createElement("br")
             document.getElementById("choices").appendChild(br)
-
-            document.createElement("<button>").append(choices[index])
+            
         }
         if (maxTime === 0) {
         }
@@ -55,7 +53,14 @@ document.querySelector("#startButton").addEventListener("click", function () {
 })
 
 //if they're out of time, display score
+function gameEnd() {
+    if (count === 0) {
+        document.getElementById("game").style = "display:none";
+        document.getElementById("timeUp").style = "display:'Time's Up!'";
+    }
+}
 
+gameEnd()
 
 // display question 
 
